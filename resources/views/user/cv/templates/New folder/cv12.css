@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+
+}
+
+body {
+
+    font-size: 16px;
+
+    color: #343a40;
+}
+
+.bold {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+.resume{
+    width: 842px;
+    height: auto;
+    margin: 50px auto;
+}
+.resume .resume_profile{
+    width: 100%;
+}
+.resume .resume_profile img{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.resume #name{
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 50px;
+    padding-left: 30px;
+    padding-top: 90px;
+}
+
+.resume #profession{
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 20px;
+    padding-left: 60px;
+    padding-top: 0px;
+    color: #d3190d;
+}
+
+.resume .resume_item{
+    margin-top: 30px;
+    border-bottom: 2px solid #f23a2e;
+}
+
+
+.resume .resume_item:last-child,
+.resume .resume_item:last-child {
+    border-bottom: 0px;
+}
+.midline{
+    border-left: 2px solid #b3b3b3;
+    padding-left: 40px;
+}
+
+
+.resume ul li {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.resume ul li:last-child {
+    margin-bottom: 0;
+}
+
+
+.resume ul li .icon {
+    width: 35px;
+    height: 35px;
+    color: #b3b3b3;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 16px;
+    position: relative;
+}
+
+
+
+.resume .icon i,
+.resume .resume_right .resume_hobby ul li i {
+    position: absolute;
+    color: #d3190d;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.resume ul li .data {
+    color: #b3b3b3;
+}
+
+.resume .resume_skills ul li {
+    display: flex;
+    margin-bottom: 10px;
+    color: #b3b3b3;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resume .resume_left .resume_skills ul li .skill_name {
+    width: 100%;
+}
+
+.row3 .degree{
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-style: italic;
+}
+.row3 .col-md-6 u{
+  text-decoration: #d3190d underline;
+}
+
+.row3 .resume_info .place{
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-style: normal;
+}
+.row3 .resume_info ul .from{
+    color: #d3190d;
+    margin-top:0px ;
+    margin-bottom: 0px;
+}
+.resume .row4 .col-md-6 .resume_info ul li::before{
+    content: "\2022";
+    color: #d3190d;
+    font-weight: bold;
+    display: inline-block;
+ margin-right: 1rem;
+    margin-left: -1rem;
+}
+
+
+.resume .row4 .resume_skills ul li .skill_progress {
+    width: 60%;
+    margin: 0 5px;
+    height: 5px;
+    background: #9e9e9e;
+    position: relative;
+}
+.resume .resume_skills ul li .skill_per {
+    width: 15%;
+}
+
+.resume .resume_skills ul li .skill_progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #d3190d;
+}
+
+
+
+
+
+
+
+
+
+
+
+

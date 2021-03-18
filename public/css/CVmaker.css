@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600;900&display=swap');
+
+body {
+    overflow-x: hidden;
+    background-color: whitesmoke;
+    line-height: 1.7;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+#themetext{
+    color: #20c997;
+}
+
+/*============= Main SECTION =============*/
+
+/*--Navbar--*/
+
+/*--navigation--*/
+
+
+
+
+
+header .carousel-inner .item{
+    height: 100vh;
+}
+
+.navbar{
+
+    font-family: Avenir-Book, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+
+}
+.navbar-brand img{
+    height: 4rem;
+}
+.navbar-brand img:hover{
+    transform: scale(1.1);
+    opacity: 0.9;
+    transition: 0.3s;
+}
+.navbar-nav li{
+    padding-right: .7rem;
+}
+.navbar-light .collapse .navbar-nav .nav-link{
+    color: white;
+    padding-top: .8rem;
+}
+.navbar-light .collapse .navbar-nav .nav-link.active,
+.navbar-light .collapse .navbar-nav .nav-link:hover{
+    color: #5dd28e;
+}
+
+
+/* Links inside the navbar */
+.navbar-nav a {
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+.dropdown .dropdown-menu {
+    color: #9e9e9e;
+    background-color: transparent;
+}
+
+/* The dropdown container */
+.navbar-nav .nav-item .dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown-menu a{
+    /*color: #FFFFFF ;*/
+    color: #71dd8a;
+}
+.dropdown-menu .dropdown-item:hover{
+    color: #489d5a;
+}
+
+.banner{
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.carousel .carousel-inner .carousel-item .carousel-caption
+{
+    padding-bottom: 170px;
+    font-family: 'Helvetica', Arial, serif;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption h2 span{
+    color: #5dd28e;
+}
+.btnSlider{
+    padding: 15px 35px;
+    display: inline-block;
+    margin-top: 15px;
+    color: white;
+    text-transform: uppercase;
+    border: 2px solid #5dd28e;
+    position: relative;
+}
+
+/* Add a Hover Effect On Carousel Button (Code No = 101) */
+
+.btnSlider:after{
+    content: "";
+    position: absolute;
+    background: #5dd28e;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+}
+
+.btnSlider:hover{
+    color: #fff !important;
+    text-decoration: none;
+    border:2px solid #5dd28e;
+}
+
+.btnSlider:hover:after{
+    width: 100%;
+}
+
+.carousel-indicators .active{
+    background-color: #34ce57;
+
+}
+
+
+
+
+
+
+/*--landing page--*/
+
+
+.caption{
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top:38%;
+    z-index:1;
+    color: white;
+    text-transform: uppercase;
+}
+.caption h1{
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .2rem .2rem  black;
+    padding-bottom:.5rem ;
+}
+.caption h3{
+    font-size: 1.8rem;
+    text-shadow: .1rem .1rem .5rem black;
+    padding-bottom:1.6rem ;
+}
+.btn-lg{
+    background-color: hsla(120, 100%, 75%, 0.3);
+    color: #1e7e34;
+    border-width: thin;
+    border-radius: 3px;
+    border-color: #5dd28e;
+    font-family: 'Overpass', sans-serif,bold;
+}
+
+
+/*============= Our Services SECTION =============*/
+
+
+.services {
+    text-align:center;
+    background-color: whitesmoke;
+}
+.services h1{
+    padding-top: 60px;
+    padding-bottom: 50px;
+    font-family: 'Overpass', sans-serif,bold;
+    letter-spacing: 1px;
+    color: #222831;
+}
+
+.services .container h1:after{
+    content: '';
+    background: #5dd28e;
+    display: block;
+    width: 150px;
+    height: 3px;
+    margin:10px auto;
+}
+
+.serviceicon{
+    transition: all .3s ease-in-out;
+    transition-delay: .3s;
+}
+
+.serviceicon .icon{
+    color: #000;
+    font-size: 40px;
+    margin:20px auto;
+    padding:7px;
+    height:80px;
+    width:80px;
+    transition: all .3s ease-in-out;
+}
+
+/* Icon Hover Effect (Code No = 101) */
+
+.serviceicon:hover>.icon{
+    color: #5dd28e;
+    transform: scale(1.4);
+    transition: .3s ease-in-out;
+    transition-delay: 0.5s;
+}
+
+.serviceicon:hover{
+    box-shadow: 1px 1px 15px  #000;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.services .container{
+    border-bottom: 2px solid #b3b3b3;
+}
+.services .container .row{
+    padding-bottom: 90px;
+}
+
+
+/*============= CV SECTION =============*/
+.CVSection{
+    text-align: center;
+}
+.CVSection h1{
+    padding-top: 60px;
+    color: #222831;
+    font-family: 'Overpass', sans-serif,bold;
+    letter-spacing: 1px;
+}
+
+
+.CVSection h1:after{
+    content: '';
+    background: #5dd28e;
+    display: block;
+    width: 150px;
+    height: 3px;
+    margin:10px auto;
+}
+
+.CVSection
+{
+    background-color: whitesmoke ;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.CVSection .swiper-container
+{
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 170px;
+}
+.CVSection .swiper-container .swiper-slide
+{
+    background-position: center;
+    background-size: cover;
+    width: 360px;
+    height: 400px;;
+}
+
+
+/*============= Why Choose Us SECTION =============*/
+.whyChooseUs{
+    text-align: center;
+}
+.whyChooseUs h1{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #222831;
+    font-family: 'Overpass', sans-serif,bold;
+    letter-spacing: 1px;
+}
+.whyChooseUs .container h1:after{
+    content: '';
+    background: #5dd28e;
+    display: block;
+    width: 150px;
+    height: 3px;
+    margin:10px auto;
+}
+
+.whyChooseUs{
+    background-color: whitesmoke;
+}
+
+.container hr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+.featurette.row {
+    color: #222831;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.img-fluid{
+    max-width:100%;
+    height: auto;
+}
+@media (max-width: 767.98px) {
+    .ftco-section {
+        padding: 6em 0; } }
+
+
+.marketing h2 {
+    font-weight: 400;
+}
+.whyChooseUs .container{
+    border-bottom: 2px solid #b3b3b3;
+    padding-bottom: 90px;
+}
+
+
+
+/*============= Clients SECTION =============*/
+
+.reviews h1{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    font-family: 'Overpass', sans-serif,bold;
+    color: #222831;
+    letter-spacing: 1px;
+}
+.reviews h1:after{
+    content: '';
+    background: #5dd28e;
+    display: block;
+    width: 120px;
+    height: 3px;
+    margin:10px auto;
+}
+.clients{
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*min-height: 100vh;*/
+}
+.clients .container{
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppons',sans-serif;
+
+
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:20px auto;
+}
+.clients .container .box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 320px;
+    height: 420px;
+    margin:20px;
+    transition: all .3s ease-in-out;
+}
+
+.clients .container .box:hover{
+    box-shadow: 1px 1px 15px  #000;
+    transition: all .3s ease-in-out;
+}
+.clients .container .box .content{
+    padding:30px;
+    text-align: center;
+}
+.clients .container .box .content .quote{
+    max-width: 48px;
+}
+.clients .container .box .content p{
+    color: white;
+    padding: 20px;
+}
+.clients .container .box .content .user{
+    max-width:72px;
+    border-radius: 50%;
+}
+.clients .container .box .content h3{
+    color: #0c5460;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing:1px;
+    margin-top: 20px;
+    font-weight: 900;
+}
+.clients{
+    border-bottom: 2px solid #b3b3b3;
+    padding-bottom: 50px;
+    /*padding-top: 50px;*/
+}
+
+
+
+
+/*============= Footer SECTION =============*/
+
+.page-footer .icon{
+    color: #5dd28e;
+}
+.page-footer{
+    background-color: #0c5460;
+}
+.page-footer .green{
+    margin-bottom: 30px;
+}
+
+.page-footer .green:after{
+    content: '';
+    background: #5dd28e;
+    display: block;
+    width: auto;
+    height: 1px;
+    margin-top:10px;
+}
+.page-footer .container .row .sub .dark-grey-text{
+    color: #b3b3b3;
+}
